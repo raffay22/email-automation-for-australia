@@ -1,4 +1,4 @@
-Subject: ProcedureTracking for {business_name} — fees, parents, attendance
+Subject: ProcedureTracking for {business_name} — fees, parents app, attendance
 
 Hi {business_name} team,
 
@@ -11,4 +11,8 @@ Besides the website audit for {url}, schools in {city} often need a simpler way 
 ProcedureTracking CRM is built for those school operations. Happy to share a short feature walkthrough if helpful.
 
 Best regards,
-{sender_name}
+
+Maria Umeed
+Senior SaaS Architect & Tech Lead | Growva Business
+🌐 https://growvabusiness.com | 🌐 https://proceduretracking.com
+📞 +92 337 2421819

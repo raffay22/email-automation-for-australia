@@ -1,10 +1,20 @@
-Subject: A quick security note for {business_name}
+Subject: Quick security check regarding [Brand Name]'s platform
 
-Hi {business_name} team,
+Hi [Owner's Name / Team],
 
-I put together a short website security and technology advisory that many schools and local businesses find useful as a baseline checklist.
+I was reviewing regional business platforms around [Town Name, e.g., Geelong] and noticed that [Company/School Name] is running on a standard legacy PHP/WordPress setup.
 
-I've attached the general advisory PDF. If helpful, I can follow up with a custom snapshot for {url}.
+Following recent critical cybersecurity advisories from the Australian Signals Directorate (ASD/ACSC) and U.S. Cybersecurity & Infrastructure Security Agency (CISA) regarding core PHP execution vulnerabilities, unpatched web servers face automated exploit risks targeting legacy environments.
+You can verify the official security alerts here:
+🔗 ACSC Official Alert: https://www.cyber.gov.au/alert/critical-vulnerabilities-in-php
+🔗 CISA Official Emergency Alert: https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching
+I can run a quick, no-cost safety check on public server headers to verify whether your site is exposed. Would you like me to run a brief check for [Brand Name]?
+You can also verify my background via my LinkedIn profile:
+         🔗 https://www.linkedin.com/in/maria-umeed-a-crm-specialist
 
 Best regards,
-{sender_name}
+Maria Umeed
+Senior SaaS Architect & Tech Lead | Growva Business
+https://growvabusiness.com | https://proceduretracking.com
+
+

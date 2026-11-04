@@ -1,12 +1,14 @@
-Subject: The customers who never come back to {business_name}
+Subject: Re-booking reminder gaps at {business_name}
 
 Hi {business_name} team,
 
-Most service businesses in {city} lose revenue quietly — not from bad service, but from customers who meant to rebook and simply forgot.
+Following up on the quick review audit I sent over—another hidden leak for local businesses is the regular client who quietly drifts away after 60 to 90 days simply because nobody checked back in.
 
-A short re-booking nudge (SMS/email) after a visit usually recovers a slice of that churn without spending more on ads.
+Chasing them manually takes too much time, so most owners just let it happen.
 
-Growva Business helps automate those reminders so your team stays focused on the floor.
+Growva Business automates that exact re-engagement loop so past customers come back on autopilot. Worth exploring?
 
 Best regards,
-{sender_name}
+Maria Umeed
+SaaS Architect & Full-Stack Developer | Growva Business 
+https://growvabusiness.com | https://proceduretracking.com

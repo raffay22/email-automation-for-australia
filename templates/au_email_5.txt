@@ -6,6 +6,9 @@ Growva Business brings operations, staff schedules, customer reminders, and revi
 
 If you want a 10-minute walkthrough tailored to a {city} service business, reply and I will send a time.
 
+You can also verify my background via my LinkedIn profile:
+         🔗 https://www.linkedin.com/in/maria-umeed-a-crm-specialist
 Best regards,
-{sender_name}
-{growva_site}
+Maria Umeed
+SaaS Architect & Full-Stack Developer | Growva Business 
+https://growvabusiness.com | https://proceduretracking.com

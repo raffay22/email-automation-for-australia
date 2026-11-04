@@ -1,10 +1,14 @@
-Subject: Custom audit ready for {business_name}
+Subject: Custom Technical Audit Report — [Company/School Name]
 
-Hi {business_name} team,
+Dear Management,
 
-I've completed a live technology snapshot for {url} — covering server type, PHP signals, and CMS indicators.
+Following up on our security notice, our architecture team conducted a non-intrusive evaluation of your web portal and compiled a formal, confidential Technical Audit Report specifically tailored for your system.
 
-The custom audit PDF is attached. Happy to walk through the findings if useful.
+Your custom audit document is attached to this email, detailing server runtime configurations and required compliance steps.
+
+Please let us know if your technical team would prefer a brief 10-minute review call this week.
 
 Best regards,
-{sender_name}
+Maria Umeed
+SaaS Architect & Full-Stack Developer | Growva Business 
+https://growvabusiness.com | https://proceduretracking.com

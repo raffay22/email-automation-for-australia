@@ -1,10 +1,16 @@
 Subject: Growva Business workflows for teams like {business_name}
 
-Hi {business_name} team,
 
-Alongside the website audit for {url}, I wanted to briefly introduce Growva Business — SaaS workflows built for Australian operators who need clearer task ownership, approvals, and client follow-ups without another bloated CRM.
+Dear Management {business_name},
 
-If useful, I can send a one-pager on how Growva maps to your current process.
+Beyond infrastructure security, scaling institutional operations requires eliminating manual administrative friction.
+
+At Growva Business, we specialize in high-performance web engineering, custom CRM architecture, and automated workflow solutions designed to scale global business operations.
+
+We would love to share a brief operational overview if your team is exploring digital optimization this quarter.
 
 Best regards,
-{sender_name}
+
+Maria Umeed
+Senior SaaS Architect & Tech Lead | Growva Business
+ https://growvabusiness.com |  https://proceduretracking.com
