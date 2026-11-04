@@ -81,12 +81,14 @@ jobs:
           set -euo pipefail
 
           CAMPAIGN="${{ github.event.inputs.campaign || 'all' }}"
-          DRY_FLAG=""
-          if [ "${{ github.event.inputs.dry_run || 'false' }}" = "true" ]; then
-            DRY_FLAG="--dry-run"
-          fi
 
           # GitHub runners are UTC; --ignore-hour keeps Mon–Thu + daily caps while
           # allowing the scheduled UTC slot to cover AU/PK local morning windows.
-          echo "Running: python main.py --campaign ${CAMPAIGN} --ignore-hour ${DRY_FLAG}"
-          python main.py --campaign "${CAMPAIGN}" --ignore-hour ${DRY_FLAG}
+          if [ "${{ github.event.inputs.dry_run || 'false' }}" = "true" ]; then
+            # Dry-run verifies secrets + runner wiring without SMTP or live Apify spend
+            echo "Running: python main.py --campaign ${CAMPAIGN} --ignore-hour --dry-run --no-apify"
+            python main.py --campaign "${CAMPAIGN}" --ignore-hour --dry-run --no-apify
+          else
+            echo "Running: python main.py --campaign ${CAMPAIGN} --ignore-hour"
+            python main.py --campaign "${CAMPAIGN}" --ignore-hour
+          fi

@@ -141,9 +141,18 @@ def _fetch_actor_items(city: str) -> list[dict[str, Any]]:
         return []
 
     client = ApifyClient(config.APIFY_API_TOKEN)
+    # compass/crawler-google-places requires at least one of:
+    # searchStringsArray | categoryFilterWords | startUrls | allPlacesNoSearchAction
     run_input = {
+        "searchStringsArray": [
+            f"hair salon {city} Australia",
+            f"gym {city} Australia",
+            f"cafe {city} Australia",
+        ],
+        "maxCrawledPlacesPerSearch": 20,
+        "language": "en",
+        "countryCode": "au",
         "city": city,
-        "country": "Australia",
         "maxResults": 50,
         "maxItems": 50,
     }
@@ -155,11 +164,28 @@ def _fetch_actor_items(city: str) -> list[dict[str, Any]]:
     if not run:
         return []
 
-    dataset_id = run.get("defaultDatasetId")
+    # apify-client may return a dict or a Run model
+    if isinstance(run, dict):
+        dataset_id = run.get("defaultDatasetId")
+        status = (run.get("status") or "").upper()
+    else:
+        dataset_id = getattr(run, "default_dataset_id", None) or getattr(
+            run, "defaultDatasetId", None
+        )
+        status = str(getattr(run, "status", "") or "").upper()
+
+    if status and status not in {"SUCCEEDED", "COMPLETED"}:
+        print(f"[apify] Actor status {status or 'unknown'} for {city}; skipping dataset")
+        return []
     if not dataset_id:
+        print(f"[apify] No dataset id for {city}; skipping")
         return []
 
-    return list(client.dataset(dataset_id).iterate_items())
+    try:
+        return list(client.dataset(dataset_id).iterate_items())
+    except Exception as exc:
+        print(f"[apify] Dataset read failed for {city}: {exc}")
+        return []
 
 
 def scrape_australia_city(city: str) -> list[dict[str, Any]]:
