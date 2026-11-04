@@ -1,0 +1,13 @@
+Subject: Google Reviews audit for {business_name}
+
+Hi {business_name} team,
+
+I put together a short 2-page Google Reviews audit for {business_name} based on your public rating ({rating}★) and review count ({review_count}).
+
+It includes a simple competitor-style benchmark (e.g. nearby operators often earn meaningfully more reviews with a light follow-up habit). PDF attached.
+
+Happy to walk through it if useful.
+
+Best regards,
+{sender_name}
+Growva Business

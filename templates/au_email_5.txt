@@ -1,0 +1,11 @@
+Subject: One dashboard for {business_name} — staff, reminders, reviews
+
+Hi {business_name} team,
+
+Growva Business brings operations, staff schedules, customer reminders, and review requests into one place — so {business_name} is not juggling five apps to keep the calendar full.
+
+If you want a 10-minute walkthrough tailored to a {city} service business, reply and I will send a time.
+
+Best regards,
+{sender_name}
+{growva_site}

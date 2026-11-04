@@ -1,0 +1,15 @@
+Subject: Closing the loop — last note for {business_name}
+
+Hi {business_name} team,
+
+This is my final follow-up. I will not email again unless you reply.
+
+If Growva Business is not relevant right now, no worries — wishing {business_name} a strong season in {city}.
+
+Not relevant? Reply "stop" and I will remove you immediately.
+
+Kind regards,
+{sender_full_name}
+Growva Business
+{growva_site}
+{sender_email}

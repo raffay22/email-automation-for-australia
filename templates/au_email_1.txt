@@ -1,0 +1,13 @@
+Subject: {business_name} — {review_count} Google reviews at {rating}★
+
+Hi {business_name} team,
+
+I noticed {business_name} in {city} currently shows about {review_count} Google reviews at {rating} stars.
+
+Local service businesses that consistently ask happy customers for reviews usually pull ahead fast — even a small lift in reviews and rating changes who gets the next booking.
+
+Worth a quick look?
+
+Best regards,
+{sender_name}
+Growva Business ({growva_site})

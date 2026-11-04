@@ -1,0 +1,10 @@
+Subject: A lighter way to run day-to-day workflows at {business_name}
+
+Hi {business_name} team,
+
+Beyond the website audit, teams in {city} often ask how to simplify approvals, tasks, and follow-ups without adding more spreadsheets.
+
+Happy to share a brief overview of how Growva Business helps organise those workflows.
+
+Best regards,
+{sender_name}

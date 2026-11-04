@@ -1,0 +1,10 @@
+Subject: A quick security note for {business_name}
+
+Hi {business_name} team,
+
+I put together a short website security and technology advisory that many schools and local businesses find useful as a baseline checklist.
+
+I've attached the general advisory PDF. If helpful, I can follow up with a custom snapshot for {url}.
+
+Best regards,
+{sender_name}

@@ -1,0 +1,10 @@
+Subject: Did you get a chance to open the {business_name} audit?
+
+Hi {business_name} team,
+
+Just checking whether you had a moment to review the custom website audit for {url}.
+
+No attachment on this note — simply a reminder in case it landed in promotions or was missed.
+
+Best regards,
+{sender_name}

@@ -1,0 +1,10 @@
+Subject: Closing the loop — last note for {business_name}
+
+Hi {business_name} team,
+
+This is my final follow-up regarding {url}. I will not email again unless you reply.
+
+I've re-attached the custom audit report as a last reference. If the timing is better later, just respond to this message and we can reopen the conversation.
+
+Best regards,
+{sender_name}

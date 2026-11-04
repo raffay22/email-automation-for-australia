@@ -1,0 +1,50 @@
+{
+  "Sydney": [
+    {
+      "title": "Harbour Hair Studio",
+      "website": "https://harbour-hair.example.com.au",
+      "email": "hello@harbour-hair.example.com.au",
+      "city": "Sydney",
+      "category": "Hair salon",
+      "rating": "4.6",
+      "reviewsCount": "42",
+      "phone": "+61 2 9000 0001",
+      "googleMapsUrl": "https://maps.google.com/?cid=harbour-hair",
+      "instagram": "https://instagram.com/harbourhair"
+    },
+    {
+      "name": "Wrong City Cafe",
+      "url": "https://melbourne-cafe.example.com.au",
+      "email": "hi@melbourne-cafe.example.com.au",
+      "city": "Melbourne",
+      "category": "Cafe",
+      "rating": "4.2",
+      "reviewsCount": "18"
+    }
+  ],
+  "Melbourne": [
+    {
+      "business_name": "Yarra Grammar School",
+      "websiteUrl": "https://yarra-grammar.example.edu.au",
+      "emails": ["contact@yarra-grammar.example.edu.au"],
+      "address": "Melbourne VIC",
+      "category": "School",
+      "rating": "4.0",
+      "reviewsCount": "12"
+    },
+    {
+      "title": "Yarra Fitness Club",
+      "website": "https://yarra-fitness.example.com.au",
+      "email": "hello@yarra-fitness.example.com.au",
+      "city": "Melbourne",
+      "category": "Gym",
+      "rating": "4.8",
+      "reviewsCount": "120",
+      "phone": "+61 3 9000 0002",
+      "googleMapsUrl": "https://maps.google.com/?cid=yarra-fitness"
+    }
+  ],
+  "Brisbane": [],
+  "Perth": [],
+  "Adelaide": []
+}

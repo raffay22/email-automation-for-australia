@@ -1,0 +1,10 @@
+Subject: Growva Business workflows for teams like {business_name}
+
+Hi {business_name} team,
+
+Alongside the website audit for {url}, I wanted to briefly introduce Growva Business — SaaS workflows built for Australian operators who need clearer task ownership, approvals, and client follow-ups without another bloated CRM.
+
+If useful, I can send a one-pager on how Growva maps to your current process.
+
+Best regards,
+{sender_name}

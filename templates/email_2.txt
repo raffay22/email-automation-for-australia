@@ -1,0 +1,10 @@
+Subject: Custom audit ready for {business_name}
+
+Hi {business_name} team,
+
+I've completed a live technology snapshot for {url} — covering server type, PHP signals, and CMS indicators.
+
+The custom audit PDF is attached. Happy to walk through the findings if useful.
+
+Best regards,
+{sender_name}

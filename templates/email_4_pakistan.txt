@@ -1,0 +1,14 @@
+Subject: ProcedureTracking for {business_name} — fees, parents, attendance
+
+Hi {business_name} team,
+
+Besides the website audit for {url}, schools in {city} often need a simpler way to handle:
+
+• Fee receipts and collection tracking
+• Parent app updates and notices
+• Attendance sync across classes
+
+ProcedureTracking CRM is built for those school operations. Happy to share a short feature walkthrough if helpful.
+
+Best regards,
+{sender_name}

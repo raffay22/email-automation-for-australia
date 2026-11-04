@@ -1,0 +1,92 @@
+# Automated B2B outreach runner (Mon–Thu).
+# Secrets required in the GitHub repo (Settings → Secrets and variables → Actions):
+#   SMTP_HOST, SMTP_PORT, IMAP_HOST, SMTP_USER, SMTP_PASSWORD,
+#   SENDER_NAME, SENDER_FULL_NAME, SENDER_EMAIL, GROWVA_SITE,
+#   APIFY_API_TOKEN, APIFY_ACTOR_ID
+# Optional: AU_DAILY_LIMIT, PK_DAILY_LIMIT, DELAY_BETWEEN_EMAILS_SEC
+
+name: Outreach Engine
+
+on:
+  schedule:
+    # Monday–Thursday 09:00 UTC (engine still enforces Mon–Thu local business days)
+    - cron: "0 9 * * 1-4"
+  workflow_dispatch:
+    inputs:
+      campaign:
+        description: "Which campaign queue to process"
+        required: true
+        default: all
+        type: choice
+        options:
+          - all
+          - australia
+          - pakistan
+      dry_run:
+        description: "Log actions without SMTP send"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: outreach-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  outreach:
+    name: Run outreach (${{ github.event.inputs.campaign || 'all' }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Ensure data directories
+        run: |
+          mkdir -p data/reports
+          touch data/sent_history.csv data/lead_backlog.csv data/apify_raw_leads.csv 2>/dev/null || true
+
+      - name: Run outreach engine
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          IMAP_HOST: ${{ secrets.IMAP_HOST }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SENDER_NAME: ${{ secrets.SENDER_NAME }}
+          SENDER_FULL_NAME: ${{ secrets.SENDER_FULL_NAME }}
+          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+          GROWVA_SITE: ${{ secrets.GROWVA_SITE }}
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+          APIFY_ACTOR_ID: ${{ secrets.APIFY_ACTOR_ID }}
+          AU_DAILY_LIMIT: ${{ secrets.AU_DAILY_LIMIT }}
+          PK_DAILY_LIMIT: ${{ secrets.PK_DAILY_LIMIT }}
+          DELAY_BETWEEN_EMAILS_SEC: ${{ secrets.DELAY_BETWEEN_EMAILS_SEC }}
+        run: |
+          set -euo pipefail
+
+          CAMPAIGN="${{ github.event.inputs.campaign || 'all' }}"
+          DRY_FLAG=""
+          if [ "${{ github.event.inputs.dry_run || 'false' }}" = "true" ]; then
+            DRY_FLAG="--dry-run"
+          fi
+
+          # GitHub runners are UTC; --ignore-hour keeps Mon–Thu + daily caps while
+          # allowing the scheduled UTC slot to cover AU/PK local morning windows.
+          echo "Running: python main.py --campaign ${CAMPAIGN} --ignore-hour ${DRY_FLAG}"
+          python main.py --campaign "${CAMPAIGN}" --ignore-hour ${DRY_FLAG}

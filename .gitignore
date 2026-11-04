@@ -1,0 +1,20 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.netlify/
+.cursor/
+*.log
+
+# Generated runtime artifacts (keep CSV headers / fixtures tracked)
+data/reports/
+data/sent_history.csv
+data/lead_backlog.csv
+data/apify_raw_leads.csv
+
+# Ignore generated PDFs, but keep designed audit templates
+*.pdf
+!audit-pdfs-templetes/**/*.pdf
+!assets/*.png
+!public/*.png

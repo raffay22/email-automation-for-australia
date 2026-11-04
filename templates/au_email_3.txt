@@ -1,0 +1,12 @@
+Subject: The customers who never come back to {business_name}
+
+Hi {business_name} team,
+
+Most service businesses in {city} lose revenue quietly — not from bad service, but from customers who meant to rebook and simply forgot.
+
+A short re-booking nudge (SMS/email) after a visit usually recovers a slice of that churn without spending more on ads.
+
+Growva Business helps automate those reminders so your team stays focused on the floor.
+
+Best regards,
+{sender_name}
